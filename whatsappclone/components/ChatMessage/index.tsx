@@ -3,8 +3,10 @@ import { Message } from '../../types';
 import { Text } from 'react-native';
 import { View } from '../Themed';
 import moment from 'moment';
+import Colors from "../../constants/Colors";
 //import styles from '../chatlistitem/style';
 import styles from './styles';
+//import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 
 
@@ -23,7 +25,7 @@ const ChatMessage=(props:ChatMessageProps)=>{
         <View style={styles.container}>
             <View style={[
                 styles.messageBox,
-                {backgroundColor: isMyMessage() ? 'DCF8CF' : 'white'},
+                {backgroundColor: isMyMessage() ? '#DCF8CF' : 'white'},
                 {marginLeft: isMyMessage() ? 50 : 0},
                 {marginRight: isMyMessage() ? 0 : 50},
 
@@ -34,6 +36,7 @@ const ChatMessage=(props:ChatMessageProps)=>{
             </View>
             
         </View>
+        //DCF8CF
         
     )
     
